@@ -81,9 +81,7 @@
         width: 100%; /* Lista de lojas ocupa 100% em telas pequenas */
     }
 
-    .ad-list {
-        grid-template-columns: repeat(1, 1fr); /* Uma coluna em telas pequenas */
-    }
+
 
     .main-content {
         flex-direction: column; /* Layout em coluna para telas menores */
