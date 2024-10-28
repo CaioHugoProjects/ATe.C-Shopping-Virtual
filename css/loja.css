@@ -40,22 +40,59 @@
     margin-bottom: 20px; /* Espaçamento entre itens */
 }
 
-/* Anúncios */
+* Anúncios */
 .ads {
     background-color: #fff;
-    padding: 20px; /* Aumentado para melhor conforto */
-    border-radius: 12px;
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+.ads h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Cor de texto */
 }
 
 /* Grade de anúncios */
 .ad-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colunas responsivas */
     grid-gap: 20px; /* Espaçamento entre os itens */
 }
 
+/* Estilização dos itens de anúncio */
+.ad-item {
+    background-color: #f9f9f9;
+    padding: 15px; /* Aumentado para mais conforto */
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Efeito de zoom */
+}
+
+.ad-item:hover {
+    transform: scale(1.05); /* Zoom ao passar o mouse */
+}
+
+.ad-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordas arredondadas para imagens */
+    margin-bottom: 10px;
+}
+
+.ad-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555; /* Cor de texto mais suave */
+}
+
+/* Estilos para animações e transições suaves */
+.ad-item{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições para sombra e transformação */
+}
 /* Responsividade */
 @media (max-width: 1200px) {
     .filter-sidebar {
